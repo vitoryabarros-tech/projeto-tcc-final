@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Landing page</title>
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-paw" id="nav_logo"> Amigo Animal</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#denunciar">Como denunciar</a>
+                </li>
+                   <li class="nav-item">
+                    <a href="#adocao">Adoção</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Vidas salvas</a>
+                </li>
+            </ul>
+
+           
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#denunciar">Como denunciar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#adocao">Adoção</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Vidas salvas</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Denuncie!
+            </button>
+
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Denuncie e ajude a        
+                    <span>salvar vidas!</span>
+                </h1>
+
+                <p class="description">
+                    Se você presenciar um animal abandonado,
+                    em situação de maus-tratos ou que precise de resgate, faça sua denúncia!
+                    Juntos podemos garantir mais proteção e 
+                    cuidado aos animais da nossa cidade e região.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="https://forms.gle/Ev1nbG3GnXHSeUBC7"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="btn-default">
+                        Formulário denúncia
+                    </a>
+
+                    <a href="tel:+5562996229257" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (62) 98565-2132
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5562985652132">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+           </div>
+
+             <div id="banner">
+                <img src="src/images/fotoinicial.png" alt=""  style="width: 700px; height: 700px;">
+             </div>
+        </section>
+
+        <section id="denunciar">
+            <h2 class="section-title">Como denunciar</h2>
+            <h3 class="section-subtitle">Juntos por mais proteção animal</h3>
+
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/forms.png" class="dish-image" alt=""  style="max-width: 100%; height: auto">
+
+                <h3 class="dish-title">
+                    Como denunciar
+                </h3>
+
+                <span class="dish-description">
+                    Acesse o formulário (Forms) que disponibilizamos acima ("formulário denúncia"),
+                    preencha as informações, adicione fotos ou vídeos do local e envie.
+                    Sua denúncia é essencial para que possamos agir!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <span></span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-question"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/rua.png" class="dish-image" alt=""  style="max-width: 100%; height: auto">
+
+                <h3 class="dish-title">
+                    Animal em situação de rua
+                </h3>
+
+                <span class="dish-description">
+                    Denuncie animais que estão abandonados, sem tutor,
+                    vivendo nas ruas, sem abrigo, sem alimentação
+                    ou em condições de risco.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <span></span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-question"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/mautrato.png" class="dish-image" alt=""  style="max-width: 100%; height: auto">
+
+                <h3 class="dish-title">
+                    Maus-tratos
+                </h3>
+
+                <span class="dish-description">
+                    Denuncie casos de agressão, falta de alimentos,
+                    falta de cuidados veterinários, animais presos
+                    em locais inadequados ou qualquer forma de violência contra animais.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <span></span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-question"></i>
+                      </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/resgate.png" class="dish-image" alt=""  style="max-width: 100%; height: auto">
+
+                <h3 class="dish-title">
+                    Resgate e atendimento
+                </h3>
+
+                <span class="dish-description">
+                    Ao recebermos a sua denúncia, avaliamos a situação e acionamos os
+                    órgãos responsáveis para o resgate,
+                    encaminhamento e atendimento adequado do animal.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <span></span>
+                </div>
+
+                <div class="dish-price">
+                   <h4>Saiba mais</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-question"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="adocao">
+            <h2 class="section-title">Adoção</h2>
+            <h3 class="section-subtitle">Encontre seu novo melhor amigo!</h3>
+
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/bingo.jpg" class="dish-image" alt=""  style="max-width: 100%; height: auto">
+
+                <h3 class="dish-title">
+                    Bingo (macho)
+                </h3>
+
+                <span class="dish-description">
+                    Bingo é um cão muito carinhoso, brincalhão e adora fazer novos amigos.
+                    Foi resgatado e agora está pronto para um novo lar cheio de amor.
+                    Bingo tem 2 anos, porte médio e já está vacinado!
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <span></span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Quero adotar</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/mia.jpg" class="dish-image" alt=""  style="max-width: 100%; height: auto">
+
+                <h3 class="dish-title">
+                    Mia (fêmea)
+                </h3>
+
+                <span class="dish-description">
+                Mia é uma gatinha meiga, curiosa e muito carinhosa.
+                Foi resgatada e agora procura um lar seguro.
+                Mia tem 1 ano, porte pequeno e já está vacinada.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <span></span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Quero adotar</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/pipoca.jpg" class="dish-image" alt=""  style="max-width: 100%; height: auto">
+
+                <h3 class="dish-title">
+                    Pipoca (fêmea)
+                </h3>
+
+                <span class="dish-description">
+                    Pipoca é uma cachorrinha cheia de energia, carinhosa e ama brincar. 
+                    Foi resgatada em situação de abandono e
+                    está pronta para fazer parte de uma nova história!
+                    Pipoca tem 6 meses, porte médio e já está vacinada.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <span></span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Quero adotar</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/tom.jpg" class="dish-image" alt=""  style="max-width: 100%; height: auto">
+
+                <h3 class="dish-title">
+                    Tom (macho)
+                </h3>
+
+                <span class="dish-description">
+                    Tom é um gatinho dócil, tranquilo e esperto. Foi encontrado na rua e agora busca uma
+                    família que lhe dê todo o cuidado e atenção.
+                    Tom tem 1 ano, porte pequeno e já está vacinado.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <span></span>
+                </div>
+
+                <div class="dish-price">
+                   <h4>Quero adotar</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/chef.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Vidas salvas
+                </h2>
+                <h3 class="section-subtitle">
+                    Cada resgate é uma história de esperança!
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/ava1.jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Letícia Souza - Animal resgatado
+                                <span>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i> 
+                                </span>
+                            </p>
+
+                            <p>
+                               "Encontrei um cachorrinho abandonado, muito magro e assustado.
+                                Fiz a denúncia informando a localização e enviando fotos.
+                                Meu caso foi encaminhado para o atendimento e o animal recebeu
+                                os cuidados necessários. Me apaixonei por ele e adotei. Se chama Téo"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <img src="src/images/ava2.jpg" class="feedback-avatar" alt="">
+
+                    <div class="feedback-content">
+                        <p>
+                            Carlos Mendeiros - Resgate de animal ferido
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            "Encontrei um gatinho machucado na rua e não sabia como ajudá-lo. Fiz a denúncia pelo
+                            formulário e expliquei a situação. O gatinho teve o apoio de
+                            responsáveis especializados e teve uma nova chance de viver! Foi emocionante!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-default">
+                Ver mais avaliações
+            </button>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2026 Amigo Animal
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5562985652132">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
